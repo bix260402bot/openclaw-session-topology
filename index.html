@@ -37,8 +37,11 @@
   <aside id="inspector" aria-live="polite"><div class="ins-head"><button id="close" aria-label="Close">×</button><div id="insType" class="type"></div><h2 id="insTitle"></h2></div><div class="ins-body"><p id="insText"></p><div class="truth"><b>What it is not</b><span id="insNot"></span></div><div class="mini-grid"><div class="mini"><b>Owns</b><span id="insOwns"></span></div><div class="mini"><b>Connects to</b><span id="insConnects"></span></div></div><div class="source" id="insSource"></div></div></aside>
   <section id="scenario"><div class="eyebrow" id="scenarioType">SYSTEM VIEW</div><h2 id="scenarioTitle">A channel message becomes a turn</h2><p id="scenarioText">Click a card to inspect it. Drag to orbit. Scroll to zoom. Pick a trace to watch only the relationships that matter.</p><div class="progress"><i id="progress"></i></div></section>
   <div id="hint"><strong>Explore the model.</strong> Drag to orbit · scroll to zoom · click a card for its exact boundary · <span class="keys">double-click empty space</span> to reset view.</div>
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js" } }
+  </script>
   <script type="module">
-    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js';
+    import * as THREE from 'three';
     import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/controls/OrbitControls.js';
 
     const C={route:0x60a5fa,persist:0xffb454,context:0xc084fc,work:0x54e0a0,delivery:0xff78ad,alert:0xff7e73,muted:0x6f849b};
